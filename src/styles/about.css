@@ -9,10 +9,9 @@
 }
 
 #terminal {
-    margin: 0 100px 0 0;
+    margin: 0 100px 15px 0;
     max-width: 100%;
     width: 700px;
-    height: 210px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -45,6 +44,7 @@
 #title {
     font-family: "Molot", "Futura ND Demibold", Sans-serif;
     margin: 0 0 1.7rem 0;
+    font-weight: 800;
 }
 
 #center-img {

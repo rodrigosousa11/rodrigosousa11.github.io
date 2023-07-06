@@ -64,6 +64,7 @@
     color: #ffffff;
     margin: 5px 0px 0px 0px;
     letter-spacing: 2px;
+    font-weight: 800;
 }
 
 .arrow {
@@ -80,6 +81,21 @@
     opacity: 1;
     scale: 1.1;
 }
+
+@media (max-width: 1500px) {
+    .presentation {
+        margin-top: 100px;
+    }    
+
+    .name {
+        width: 650px;
+    }
+
+    .whoami {
+        font-size: 1.5rem;
+    }
+}
+
 
 @media (max-width: 768px) {
     .name {
