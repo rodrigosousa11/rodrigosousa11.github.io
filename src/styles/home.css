@@ -59,7 +59,7 @@
 }
 
 .whoami {
-    font-family: "Molot", Sans-serif;
+    font-family: "Molot", "Futura ND Demibold", Sans-serif;
     font-size: 1.7rem;
     color: #ffffff;
     margin: 5px 0px 0px 0px;
@@ -119,6 +119,7 @@
 
     .whoami {
         font-size: 0.9rem;
+        font-weight: 800;
     }
 
     .arrow {
