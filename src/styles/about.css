@@ -1,0 +1,99 @@
+#about {
+    background-color: rgb(240, 240, 240);
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(32, 32, 32);
+    padding: 0 20px;
+}
+
+#terminal {
+    margin: 0 100px 0 0;
+    max-width: 100%;
+    width: 700px;
+    height: 210px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#terminal p {
+    margin: 0;
+    font-family: "Futura ND Demibold", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+#terminal p.fade-in {
+    opacity: 1;
+}
+
+#me {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 5s;
+}
+
+#me.fade-in {
+    opacity: 1;
+}
+
+#title {
+    margin: 0 0 1.7rem 0;
+}
+
+#center-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    #about {
+        padding: 40px 25px 40px 25px;
+    }
+
+    #terminal {
+        width: 90%;
+    }
+
+    #me {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    #about {
+        height: auto;
+        flex-direction: column; 
+        align-items: flex-start;
+        padding: 40px 25px 40px 25px;
+    }
+
+    #terminal {
+        width: 100%;
+        max-width: none;
+        height: auto; 
+        margin-bottom: 20px; 
+    }
+
+    #me {
+        width: 60%; 
+        height: auto; 
+        margin: 15px;
+    }
+
+    #terminal p {
+        font-size: 13px;
+    }
+    
+    #title {
+        margin-bottom: 1rem;
+        font-size: 30px;
+    }
+}

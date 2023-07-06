@@ -1,0 +1,136 @@
+#home {
+    height: 100vh;
+    background-color: #38413f;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentation {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+    width: 700px;
+}
+
+#contact-but {
+    cursor: pointer;
+    margin: 100px;
+    padding: 0.6em 1.6em;
+    border: 3px solid #ffffff;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: 0.3s;
+    z-index: 1;
+    font-family: "Futura ND Demibold", Sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+#contact-but::before {
+    content: "";
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #ffffff;
+    transition: 0.5s ease;
+    display: block;
+    z-index: -1;
+}
+
+#contact-but:hover::before {
+    width: 105%;
+}
+
+#contact-but:hover {
+    color: #111;
+}
+
+.whoami {
+    font-family: "Molot", Sans-serif;
+    font-size: 1.7rem;
+    color: #ffffff;
+    margin: 5px 0px 0px 0px;
+    letter-spacing: 2px;
+}
+
+.arrow {
+    opacity: 0.9;
+    color: #ffffff;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 50px;
+}
+
+.arrow:hover {
+    opacity: 1;
+    scale: 1.1;
+}
+
+@media (max-width: 768px) {
+    .name {
+        width: 90%;
+        max-width: 400px;
+    }
+    
+    #contact-but {
+        margin: 50px;
+        padding: 0.5em 1.2em;
+        font-size: 14px;
+    }
+
+    .whoami {
+        font-size: 0.9rem;
+    }
+
+    .arrow {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        bottom: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    #contact-but {
+        margin: 50px;
+        padding: 0.5em 1.2em;
+        font-size: 14px;
+    }
+
+    .whoami {
+        font-size: 0.9rem;
+    }
+
+    .arrow {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        bottom: 50px;
+    }
+
+    @media (max-width: 320px) {
+        .whoami {
+            font-size: 0.8rem;
+        }
+    }
+}
