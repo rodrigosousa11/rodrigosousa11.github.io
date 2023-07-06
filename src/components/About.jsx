@@ -41,7 +41,7 @@ function About() {
     return (
         <div id="about">
             <div id="terminal">
-                <h1 id="title">About me</h1>
+                <h1 id="title">ABOUT ME</h1>
                 <p ref={(ref) => (paragraphRefs.current[0] = ref)}>
                     Hi there! My name is Rodrigo Sousa and I'm from Porto,
                     Portugal. I'm currently on my second year of a Computer

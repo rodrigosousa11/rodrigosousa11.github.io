@@ -21,9 +21,9 @@ function Home() {
     return (
         <div id="home">
             <div className="presentation">
-                <p className="whoami">Hi there! I'm</p>
+                <p className="whoami">HI THERE! I'M</p>
                 <img src={name} alt="name" className="name" />
-                <p className="whoami">Computer Engineer Enthusiast</p>
+                <p className="whoami">COMPUTER ENGINEER ENTHUSIAST</p>
             </div>
             <button id="contact-but" onClick={handleScrollContact}>Contact</button>
             <FaChevronCircleDown

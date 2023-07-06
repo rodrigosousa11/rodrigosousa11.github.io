@@ -30,7 +30,7 @@ function Contact() {
     return (
         <div id="contact">
             <form ref={form} onSubmit={sendEmail}>
-                <h1 id="contact-title">Contact me</h1>
+                <h1 id="contact-title">CONTACT ME</h1>
                 <input type="text" name="user_name" placeholder="Name" />
                 <input type="email" name="user_email" placeholder="Email" />
                 <textarea name="message" placeholder="Message" />
