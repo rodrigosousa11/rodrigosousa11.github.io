@@ -59,7 +59,7 @@
 }
 
 .whoami {
-    font-family: "Molot", "Futura ND Demibold", Sans-serif;
+    font-family: "Futura ND Demibold", Sans-serif;
     font-size: 1.7rem;
     color: #ffffff;
     margin: 5px 0px 0px 0px;
@@ -70,8 +70,8 @@
 .arrow {
     opacity: 0.9;
     color: #ffffff;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
     position: absolute;
     bottom: 50px;
@@ -82,25 +82,41 @@
     scale: 1.1;
 }
 
-@media (max-width: 1500px) {
-    .presentation {
-        margin-top: 100px;
-    }    
-
+@media (max-width: 480px) {
     .name {
-        width: 650px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #contact-but {
+        margin: 50px;
+        padding: 0.5em 1.2em;
+        font-size: 14px;
     }
 
     .whoami {
-        font-size: 1.5rem;
+        font-size: 0.8rem;
+        font-weight: 800;
+    }
+
+    .arrow {
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        bottom: 50px;
+    }
+
+    @media (max-width: 320px) {
+        .whoami {
+            font-size: 0.6rem;
+        }
     }
 }
 
-
-@media (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
     .name {
         width: 90%;
-        max-width: 400px;
+        max-width: 550px;
     }
     
     #contact-but {
@@ -121,33 +137,16 @@
     }
 }
 
-@media (max-width: 480px) {
-    .name {
-        width: 90%;
-        max-width: 400px;
-    }
+@media screen and (min-width: 768px) and (max-width: 1500px) {
+    .presentation {
+        margin-top: 100px;
+    }    
 
-    #contact-but {
-        margin: 50px;
-        padding: 0.5em 1.2em;
-        font-size: 14px;
+    .name {
+        width: 650px;
     }
 
     .whoami {
-        font-size: 0.9rem;
-        font-weight: 800;
-    }
-
-    .arrow {
-        width: 40px;
-        height: 40px;
-        position: absolute;
-        bottom: 50px;
-    }
-
-    @media (max-width: 320px) {
-        .whoami {
-            font-size: 0.8rem;
-        }
+        font-size: 1.5rem;
     }
 }

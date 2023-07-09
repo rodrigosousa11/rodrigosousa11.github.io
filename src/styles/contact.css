@@ -7,7 +7,7 @@
 }
 
 form {
-    margin: 70px 70px 70px 0;
+    margin: 70px 50px 70px 0;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -109,7 +109,7 @@ form {
 }
 
 #contact-title {
-    font-family: "Molot", "Futura ND Demibold", Sans-serif;
+    font-family: "Futura ND Demibold", Sans-serif;
     margin: 0 0 1.7rem 0;
     color: #ffffff;
     font-weight: 800;
@@ -163,15 +163,43 @@ span {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    #contact {
+        flex-direction: column;
+        padding: 60px 50px 60px 50px;
+    }
+
+    form {
+        margin: 0;
+        width: 100%;
+    }
+
     #contact input[type="text"],
-    #contact input[type="email"],
+    #contact input[type="email"] {
+        width: 100%;
+        max-width: 400px;
+        padding: 10px;
+        margin: 7px 0;
+        box-sizing: border-box;
+        height: 40px;
+    }
+
     #contact textarea {
         width: 100%;
-        padding: 12px;
+        max-width: 400px;
+        padding: 10px;
+        margin: 7px 0;
+        box-sizing: border-box;
+        height: 120px;
     }
 
     #send-but {
         margin: 15px 0;
+    }
+
+    .socials-contact {
+        padding-top: 20px;
+        width: 100%;
+        font-size: 15px;
     }
 }

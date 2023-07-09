@@ -1,10 +1,5 @@
-@font-face {
-    font-family: "Molot";
-    src: url("src\assets\molot.ttf") format("truetype");
-}
-
 :root {
-    font-family: "Futura ND Demibold", "Molot", Sans-serif;
+    font-family: "Futura ND Demibold", Sans-serif;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     background-color: #2b2b2b;
