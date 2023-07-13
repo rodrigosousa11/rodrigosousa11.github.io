@@ -14,7 +14,7 @@ function Home() {
     const handleScrollContact = () => {
         const aboutSection = document.getElementById("contact");
         if (aboutSection) {
-            aboutSection.scrollIntoView({ behavior: "smooth", block: "start" });
+            aboutSection.scrollIntoView({ behavior: "auto", block: "start" });
         }
     };
 
