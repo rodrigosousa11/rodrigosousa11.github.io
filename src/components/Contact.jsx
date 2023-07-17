@@ -1,16 +1,18 @@
 import "../styles/contact.css";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import React, { useRef } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 function Contact() {
     const form = useRef();
+    const [loading, setLoading] = useState(false);
 
     const sendEmail = (e) => {
         e.preventDefault();
-    
+        setLoading(true);
+
         emailjs
             .sendForm(
                 "service_mq3eekj",
@@ -22,7 +24,8 @@ function Contact() {
                 (result) => {
                     console.log(result.text);
                     e.target.reset();
-                    toast.success('Thank you for leaving a message!', {
+                    setLoading(false);
+                    toast.success("Thank you for your a message!", {
                         position: "top-right",
                         autoClose: 5000,
                         hideProgressBar: false,
@@ -35,34 +38,52 @@ function Contact() {
                 },
                 (error) => {
                     console.log(error.text);
-                    toast.error('Failed to send message. Please try again later.', {
-                        position: "top-right",
-                        autoClose: 5000,
-                        hideProgressBar: false,
-                        closeOnClick: true,
-                        pauseOnHover: true,
-                        draggable: true,
-                        progress: undefined,
-                    });
+                    setLoading(false);
+                    toast.error(
+                        "Failed to send message. Please try again later.",
+                        {
+                            position: "top-right",
+                            autoClose: 5000,
+                            hideProgressBar: false,
+                            closeOnClick: true,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined,
+                        }
+                    );
                 }
             );
     };
-    
+
     return (
         <div id="contact">
             <ToastContainer />
+            {loading ? (
+                <div className="loading-container">
+                    <div className="loading-spinner"></div>
+                </div>
+            ) : null}
             <form ref={form} onSubmit={sendEmail}>
                 <h1 id="contact-title">CONTACT ME</h1>
-                <input type="text" name="user_name" placeholder="Name" required />
-                <input type="email" name="user_email" placeholder="Email" required />
+                <input
+                    type="text"
+                    name="user_name"
+                    placeholder="Name"
+                    required
+                />
+                <input
+                    type="email"
+                    name="user_email"
+                    placeholder="Email"
+                    required
+                />
                 <textarea name="message" placeholder="Message" required />
-                <button id="send-but" type="submit">Send</button>
+                <button id="send-but" type="submit">
+                    Send
+                </button>
             </form>
             <div className="socials-contact">
-                <a 
-                    href="mailto:rodrigosousa1105@gmail.com"
-                    className="social"
-                >
+                <a href="mailto:rodrigosousa1105@gmail.com" className="social">
                     <FaEnvelope />
                     <span>rodrigosousa1105@gmail.com</span>
                 </a>
@@ -86,7 +107,7 @@ function Contact() {
                 </a>
             </div>
         </div>
-    );    
+    );
 }
 
 export default Contact;
