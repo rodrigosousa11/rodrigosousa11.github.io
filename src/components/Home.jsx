@@ -1,4 +1,3 @@
-import React from "react";
 import name from "../assets/name.png";
 import "../styles/home.css";
 import { FaChevronCircleDown } from "react-icons/fa";

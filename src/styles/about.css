@@ -1,20 +1,34 @@
 #about {
-    background-color: rgb(240, 240, 240);
-    height: 25rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: rgb(32, 32, 32);
-    padding: 0 20px;
+    background-color: rgb(240, 240, 240);
+    color: rgb(0, 0, 0);
+    padding: 70px 20px 70px 20px;
+}
+
+#title {
+    font-family: "Futura ND Demibold", Sans-serif;
+    margin: 0 0 30px 0;
+    font-weight: 600;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #terminal {
-    margin: 0 100px 15px 0;
+    margin-right: 80px;
     max-width: 100%;
-    width: 700px;
+    width: 720px;
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 1.3;
+    display: flex;
+    align-items: center;
 }
 
 #terminal p {
@@ -31,8 +45,8 @@
 }
 
 #me {
-    width: 225px;
-    height: 225px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     opacity: 0;
     transition: opacity 5s;
@@ -40,12 +54,6 @@
 
 #me.fade-in {
     opacity: 1;
-}
-
-#title {
-    font-family: "Futura ND Demibold", Sans-serif;
-    margin: 0 0 1.7rem 0;
-    font-weight: 600;
 }
 
 #center-img {
@@ -57,57 +65,61 @@
 @media screen and (max-width: 480px) {
     #about {
         height: auto;
-        flex-direction: column; 
-        align-items: flex-start;
-        padding: 40px 25px 40px 25px;
+        flex-direction: column;
+        padding: 50px 20px 50px 20px;
     }
 
     #terminal {
         width: 100%;
-        max-width: none;
-        height: auto; 
-        margin-bottom: 20px; 
+        height: auto;
+        margin: 0;
     }
 
     #me {
-        width: 60%; 
-        height: auto; 
-        margin: 15px;
+        width: 60%;
+        height: auto;
+        margin-top: 30px;
     }
 
     #terminal p {
-        font-size: 13px;
+        font-size: 14px;
     }
-    
+
     #title {
-        margin-bottom: 1rem;
+        margin-bottom: 30px;
         font-size: 30px;
-        font-weight: 800;
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 1024px) {
     #about {
         height: auto;
-        flex-direction: column; 
-        align-items: flex-start;
+        flex-direction: column;
         padding: 60px 50px 60px 50px;
     }
 
     #terminal {
         width: 100%;
-        max-width: none;
-        height: auto; 
-        margin-bottom: 20px; 
+        height: auto;
+        margin: 0;
     }
 
     #me {
-        width: 40%; 
-        height: auto; 
-        margin: 15px;
+        width: 40%;
+        height: auto;
+        margin-top: 30px;
     }
 
     #terminal p {
         font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1078px) {
+    #terminal {
+        margin-right: 20px;
+    }
+    #terminal p {
+        font-size: 20px;
     }
 }

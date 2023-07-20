@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import "../styles/about.css";
 import me from "../assets/me.jpg";
 
@@ -40,21 +40,29 @@ function About() {
 
     return (
         <div id="about">
-            <div id="terminal">
-                <h1 id="title">ABOUT ME</h1>
-                <p ref={(ref) => (paragraphRefs.current[0] = ref)}>
-                    Hi there! My name is Rodrigo Sousa and I'm from Porto,
-                    Portugal. I'm currently on my second year of a Computer
-                    Engineering degree at Universidade Lusófona. I love learning
-                    new things, especially about software development.
-                </p>
-                <br />
-                <p ref={(ref) => (paragraphRefs.current[1] = ref)}>
-                    Feel free to contact me and thanks for stopping by :)
-                </p>
-            </div>
-            <div id="center-img">
-                <img id="me" src={me} alt="me" ref={imgRef} />
+            <h1 id="title">ABOUT ME</h1>
+            <div id="container">
+                <div id="terminal">
+                    <div>
+                        <p ref={(ref) => (paragraphRefs.current[0] = ref)}>
+                            Hi there! My name is Rodrigo Sousa and I'm from Porto,
+                            Portugal.
+                            I'm a third year Computer Engineering student at Universidade Lusófona.
+                        </p>
+                        <br />
+                        <p ref={(ref) => (paragraphRefs.current[1] = ref)}>
+                            I love learning new things, especially about software development. 
+                            So in my free time you will probably find me working on some personal project.
+                        </p>
+                        <br />
+                        <p ref={(ref) => (paragraphRefs.current[2] = ref)}>
+                            Feel free to contact me and thanks for stopping by :)
+                        </p>
+                    </div>
+                </div>
+                <div id="center-img">
+                    <img id="me" src={me} alt="me" ref={imgRef} />
+                </div>
             </div>
         </div>
     );

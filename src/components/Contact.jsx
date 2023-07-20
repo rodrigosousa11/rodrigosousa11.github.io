@@ -1,8 +1,9 @@
 import "../styles/contact.css";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { HiOutlinePencilAlt } from "react-icons/hi";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 function Contact() {
@@ -63,48 +64,52 @@ function Contact() {
                     <div className="loading-spinner"></div>
                 </div>
             ) : null}
-            <form ref={form} onSubmit={sendEmail}>
-                <h1 id="contact-title">CONTACT ME</h1>
-                <input
-                    type="text"
-                    name="user_name"
-                    placeholder="Name"
-                    required
-                />
-                <input
-                    type="email"
-                    name="user_email"
-                    placeholder="Email"
-                    required
-                />
-                <textarea name="message" placeholder="Message" required />
-                <button id="send-but" type="submit">
-                    Send
-                </button>
-            </form>
-            <div className="socials-contact">
-                <a href="mailto:rodrigosousa1105@gmail.com" className="social">
-                    <FaEnvelope />
-                    <span>rodrigosousa1105@gmail.com</span>
-                </a>
-                <a
-                    href="https://github.com/rodrigosousa11"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="social"
-                >
-                    <FaGithub />
-                    <span>rodrigosousa11</span>
-                </a>
-                <a
-                    href="https://www.linkedin.com/in/rodrigo-sousa-bb8a69262"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="social"
-                >
-                    <FaLinkedin />
-                    <span>Rodrigo Sousa</span>
-                </a>
+            <h1 id="contact-title">CONTACT ME</h1>
+            <div id="contact-container">
+                <form ref={form} onSubmit={sendEmail}>
+                    <h2 id="form-title"><HiOutlinePencilAlt id="pencil-icon" />Message me.</h2>
+                    <input
+                        type="text"
+                        name="user_name"
+                        placeholder="Name"
+                        required
+                    />
+                    <input
+                        type="email"
+                        name="user_email"
+                        placeholder="Email"
+                        required
+                    />
+                    <textarea name="message" placeholder="Message" required />
+                    <button id="send-but" type="submit">
+                        Send
+                    </button>
+                </form>
+                <div className="socials-contact">
+                    <h2 id="links-title">You can find me here too:</h2>
+                    <a href="mailto:rodrigosousa1105@gmail.com" className="social">
+                        <FaEnvelope />
+                        <span>rodrigosousa1105@gmail.com</span>
+                    </a>
+                    <a
+                        href="https://github.com/rodrigosousa11"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="social"
+                    >
+                        <FaGithub />
+                        <span>rodrigosousa11</span>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/rodrigo-sousa-bb8a69262"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="social"
+                    >
+                        <FaLinkedin />
+                        <span>Rodrigo Sousa</span>
+                    </a>
+                </div>
             </div>
         </div>
     );
