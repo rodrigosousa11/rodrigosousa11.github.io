@@ -55,7 +55,6 @@
 @media screen and (min-width: 860px) and (max-width: 1024px) {
     .skills-container {
         grid-template-columns: repeat(auto-fit, minmax(120px, 120px));
-        grid-gap: 20px;
         padding: 0 20px 0 20px;
     }
 }
@@ -63,7 +62,6 @@
 @media screen and (max-width: 860px) {
     .skills-container {
         grid-template-columns: repeat(auto-fit, minmax(90px, 90px));
-        grid-gap: 15px;
         padding: 0 20px 0 20px;
     }
     .skill {
