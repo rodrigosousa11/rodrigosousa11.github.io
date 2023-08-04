@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/projects.css";
 import tasky from "../assets/tasky.png";
 import multiclipboard from "../assets/multiclip.jpg";
+import portfolio from "../assets/portfolio.png";
 import { BsGithub, BsLink45Deg } from "react-icons/bs";
 
 const Projects = () => {
@@ -23,6 +24,13 @@ const Projects = () => {
 			imageURL: multiclipboard,
 			githubLink: "https://github.com/rodrigosousa11/cli-multi-clipboard",
 		},
+		{
+			name: "My Personal Website",
+			description: "This website is built using Vite and React and serves as a platform for me to showcase my personal information, skills, projects and contacts.",
+			imageURL: portfolio,
+			githubLink: "https://github.com/rodrigosousa11/rodrigosousa11.github.io",
+			websiteLink: "https://rodrigosousa11.github.io/",
+		}
 	];
 
 	const [hoveredProject, setHoveredProject] = useState(null);

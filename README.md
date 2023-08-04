@@ -1,6 +1,6 @@
 # Personal Website
 
-Welcome to my personal website! This website is built using Vite and React and serves as a platform for me to showcase my personal information, skills and contacts.
+Welcome to my personal website! This website is built using Vite and React and serves as a platform for me to showcase my personal information, skills, projects and contacts.
 
 ## Features
 
