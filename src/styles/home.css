@@ -8,14 +8,14 @@
 }
 
 .presentation {
-    margin-top: 150px;
+    margin-top: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .name {
-    width: 700px;
+    width: 650px;
 }
 
 #contact-but {
@@ -60,7 +60,7 @@
 
 .whoami {
     font-family: "Futura ND Demibold", Sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: #ffffff;
     margin: 5px 0px 0px 0px;
     letter-spacing: 1.6px;
@@ -139,14 +139,14 @@
 
 @media screen and (min-width: 768px) and (max-width: 1500px) {
     .presentation {
-        margin-top: 100px;
+        margin-top: 140px;
     }    
 
     .name {
-        width: 650px;
+        width: 600px;
     }
 
     .whoami {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
