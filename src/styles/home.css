@@ -1,10 +1,11 @@
 #home {
     height: 100vh;
-    background-color: #38413f;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url("../assets/backg.png");
+    background-size: cover;
 }
 
 .presentation {
