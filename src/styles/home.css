@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("../assets/backg.png");
+    background-image: url("../assets/background.png");
     background-size: cover;
 }
 
