@@ -15,8 +15,8 @@ import {
     SiJavascript,
     SiMysql,
     SiMicrosoftsqlserver,
-    SiVite,
     SiMongodb,
+    SiKotlin,
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import "../styles/skills.css";
@@ -26,12 +26,12 @@ function Skills() {
         { icon: <FaJava />, name: "Java" },
         { icon: <FaC />, name: "C" },
         { icon: <FaPython />, name: "Python" },
+        { icon: <SiKotlin />, name: "Kotlin" },
         { icon: <SiJavascript />, name: "JavaScript" },
         { icon: <FaHtml5 />, name: "HTML5" },
         { icon: <FaCss3Alt />, name: "CSS3" },
         { icon: <FaNodeJs />, name: "Node.js" },
         { icon: <FaReact />, name: "React" },
-        { icon: <SiVite />, name: "Vite" },
         { icon: <SiMysql />, name: "MySQL" },
         { icon: <SiMicrosoftsqlserver />, name: "SQL Server" },
         { icon: <BiLogoPostgresql />, name: "PostgreSQL" },
