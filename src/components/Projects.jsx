@@ -3,6 +3,7 @@ import "../styles/projects.css";
 import tasky from "../assets/tasky.png";
 import multiclipboard from "../assets/multiclip.jpg";
 import portfolio from "../assets/portfolio.png";
+import sueca from "../assets/sueca.png";
 import { BsGithub, BsLink45Deg } from "react-icons/bs";
 
 const Projects = () => {
@@ -18,6 +19,13 @@ const Projects = () => {
 			websiteLink: "https://tasky-7jcp.onrender.com/",
 		},
 		{
+			name: "SuecaCounter",
+			description:
+				"SuecaCounter is an android application developed in Kotlin, designed to simplify score counting in the ”Sueca” card game. Stores scores, winners, and date/time of each game in Firebase Realtime Database, providing users with a complete history of their matches. Utilizes Firebase Authentication to authenticate users, ensuring a secure environment.",
+			imageURL: sueca,
+			githubLink: "https://github.com/rodrigosousa11/SuecaCounter",
+		},
+		{
 			name: "CLI Multi-Clipboard",
 			description:
 				"This is a Python clipboard manager that allows you to store more than one element copied and load copied elements back to clipboard using command-line commands. It uses a JSON file to store the copied data.",
@@ -26,11 +34,13 @@ const Projects = () => {
 		},
 		{
 			name: "My Personal Website",
-			description: "This website is built using Vite and React and serves as a platform for me to showcase my personal information, skills, projects and contacts.",
+			description:
+				"This website is built using Vite and React and serves as a platform for me to showcase my personal information, skills, projects and contacts.",
 			imageURL: portfolio,
-			githubLink: "https://github.com/rodrigosousa11/rodrigosousa11.github.io",
+			githubLink:
+				"https://github.com/rodrigosousa11/rodrigosousa11.github.io",
 			websiteLink: "https://rodrigosousa11.github.io/",
-		}
+		},
 	];
 
 	const [hoveredProject, setHoveredProject] = useState(null);
