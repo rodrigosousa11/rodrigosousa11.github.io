@@ -5,8 +5,6 @@ import {
     FaJava,
     FaPython,
     FaReact,
-    FaHtml5,
-    FaCss3Alt,
     FaGitAlt,
     FaNodeJs,
 } from "react-icons/fa";
@@ -17,7 +15,12 @@ import {
     SiMicrosoftsqlserver,
     SiMongodb,
     SiKotlin,
+    SiDjango,
+    SiExpress,
+    SiFirebase,
+    SiTypescript,
 } from "react-icons/si";
+import { TbBrandCpp } from "react-icons/tb";
 import { BiLogoPostgresql } from "react-icons/bi";
 import "../styles/skills.css";
 
@@ -25,17 +28,20 @@ function Skills() {
     const skillsData = [
         { icon: <FaJava />, name: "Java" },
         { icon: <FaC />, name: "C" },
+        { icon: <TbBrandCpp />, name: "C++"},
         { icon: <FaPython />, name: "Python" },
         { icon: <SiKotlin />, name: "Kotlin" },
         { icon: <SiJavascript />, name: "JavaScript" },
-        { icon: <FaHtml5 />, name: "HTML5" },
-        { icon: <FaCss3Alt />, name: "CSS3" },
+        { icon: <SiTypescript />, name: "TypeScript" },
         { icon: <FaNodeJs />, name: "Node.js" },
+        { icon: <SiExpress />, name: "Express" },
         { icon: <FaReact />, name: "React" },
+        { icon: <SiDjango />, name: "Django" },
         { icon: <SiMysql />, name: "MySQL" },
         { icon: <SiMicrosoftsqlserver />, name: "SQL Server" },
         { icon: <BiLogoPostgresql />, name: "PostgreSQL" },
         { icon: <SiMongodb />, name: "MongoDB" },
+        { icon: <SiFirebase />, name: "Firebase" },
         { icon: <FaGitAlt />, name: "Git" },
     ];
 
