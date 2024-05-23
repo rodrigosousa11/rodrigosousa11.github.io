@@ -9,19 +9,19 @@
 }
 
 .presentation {
-    margin-top: 180px;
+    margin-top: 18vh; 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .name {
-    width: 650px;
+    width: 70vh; 
 }
 
 #contact-but {
     cursor: pointer;
-    margin: 100px;
+    margin: 10vh; 
     padding: 0.7em 1.6em;
     border: 3px solid #ffffff;
     position: relative;
@@ -29,7 +29,7 @@
     background-color: transparent;
     text-align: center;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 2vh; 
     transition: 0.3s;
     z-index: 1;
     font-family: "Futura ND Demibold", Sans-serif;
@@ -61,21 +61,21 @@
 
 .whoami {
     font-family: "Futura ND Demibold", Sans-serif;
-    font-size: 1.4rem;
+    font-size: 2vh;
     color: #ffffff;
-    margin: 5px 0px 0px 0px;
-    letter-spacing: 1.6px;
+    margin: 0.5vh 0 0 0; 
+    letter-spacing: 0.2vh; 
     font-weight: 800;
 }
 
 .arrow {
     opacity: 0.9;
     color: #ffffff;
-    width: 50px;
-    height: 50px;
+    width: 6vh; 
+    height: 6vh; 
     cursor: pointer;
     position: absolute;
-    bottom: 50px;
+    bottom: 5vh; 
 }
 
 .arrow:hover {
@@ -86,30 +86,28 @@
 @media (max-width: 480px) {
     .name {
         width: 100%;
-        max-width: 400px;
+        max-width: 40vh;
     }
 
     #contact-but {
-        margin: 50px;
+        margin: 5vh;
         padding: 0.6em 1.2em;
-        font-size: 14px;
+        font-size: 1.8vh;
     }
 
     .whoami {
-        font-size: 0.8rem;
-        font-weight: 800;
+        font-size: 1.4vh;
     }
 
     .arrow {
-        width: 45px;
-        height: 45px;
-        position: absolute;
-        bottom: 50px;
+        width: 5.5vh;
+        height: 5.5vh;
+        bottom: 5vh;
     }
 
     @media (max-width: 320px) {
         .whoami {
-            font-size: 0.6rem;
+            font-size: 1.2vh;
         }
     }
 }
@@ -117,37 +115,36 @@
 @media screen and (min-width: 480px) and (max-width: 768px) {
     .name {
         width: 90%;
-        max-width: 550px;
+        max-width: 55vh;
     }
     
     #contact-but {
-        margin: 50px;
+        margin: 5vh;
         padding: 0.6em 1.2em;
-        font-size: 14px;
+        font-size: 1.8vh;
     }
 
     .whoami {
-        font-size: 0.9rem;
+        font-size: 1.6vh;
     }
 
     .arrow {
-        width: 40px;
-        height: 40px;
-        position: absolute;
-        bottom: 50px;
+        width: 5vh;
+        height: 5vh;
+        bottom: 5vh;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1500px) {
     .presentation {
-        margin-top: 140px;
+        margin-top: 14vh;
     }    
 
     .name {
-        width: 600px;
+        width: 65vh;
     }
 
     .whoami {
-        font-size: 1.2rem;
+        font-size: 1.8vh;
     }
 }

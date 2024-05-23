@@ -37,7 +37,7 @@ function About() {
                             }}
                         >
                             Hi there! My name is Rodrigo Sousa and I'm from
-                            Porto, Portugal. I'm a third year Computer
+                            Porto, Portugal. I'm a third year Software
                             Engineering student at Universidade Lusófona.
                         </p>
                         <br />
@@ -57,8 +57,10 @@ function About() {
                                 paragraphRefs.current[2] = ref;
                                 inViewRef(ref);
                             }}
-                        >
-                            Feel free to contact me and thanks for stopping by
+                        >   
+                            I'm currently looking for my first job opportunity, so
+                            feel free to contact me about that, or anything else. 
+                            Thanks for stopping by
                             :)
                         </p>
                     </div>

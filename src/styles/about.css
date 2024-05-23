@@ -33,7 +33,7 @@
 #terminal p {
     margin: 0;
     font-family: "Futura ND Demibold", sans-serif;
-    font-size: 22px;
+    font-size: 21px;
     font-weight: 500;
     opacity: 0;
     transition: opacity 3s;

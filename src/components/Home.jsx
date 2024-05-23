@@ -22,7 +22,7 @@ function Home() {
             <div className="presentation">
                 <p className="whoami">HI THERE! I'M</p>
                 <img src={name} alt="name" className="name" />
-                <p className="whoami">COMPUTER ENGINEER ENTHUSIAST</p>
+                <p className="whoami">SOFTWARE ENGINEER ENTHUSIAST</p>
             </div>
             <button id="contact-but" onClick={handleScrollContact}>Contact</button>
             <FaChevronCircleDown
