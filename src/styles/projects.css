@@ -17,7 +17,7 @@
 .project-item {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 }
 
 .project-item:last-child {

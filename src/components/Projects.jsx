@@ -5,10 +5,17 @@ import multiclipboard from "../assets/multiclip.jpg";
 import portfolio from "../assets/portfolio.png";
 import sueca from "../assets/sueca.png";
 import stegano from "../assets/stegano.png";
+import citygems from "../assets/citygems.png";
 import { BsGithub, BsLink45Deg } from "react-icons/bs";
 
 const Projects = () => {
 	const projectData = [
+		{
+			name: "City Gems",
+			description: "City Gems is a mobile application designed to facilitate the exploration and discovery of cultural heritage sites in the cities of Portugal. Built with Node.js, Express.js, React Native, Expo, MongoDB and Firebase Storage.",
+			imageURL: citygems,
+			githubLink: "https://github.com/rodrigosousa11/city-gems"
+		},
 		{
 			name: "SteganoLab",
 			description : "This web application allows users to encode secret messages into images with or without passwords using the LSB-Steganography technique in which we replace the least significant bit of the image with the bits of a message to be hidden and decode them back to retrieve the original message. Users can optionally sign up for an account for the opportunity to keep track of their past encodings and decodings.",
